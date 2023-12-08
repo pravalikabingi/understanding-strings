@@ -1,0 +1,262 @@
+<html>
+  <body>
+    <script>
+      //----------------------fing vowels in a given string---------------------------------
+      //   var str = "Pravalika";
+
+      //   for (var i = 0; i < str.length; i++) {
+      //     if (str[i] == "a" ||str[i] == "e" ||str[i] == "i" ||str[i] == "o" ||str[i] == "u") {
+
+      //       console.log(str[i]);
+      //     }
+      //   }
+
+      //------------write a program to print your name---------------------------------
+      //   var a = "pravalika";
+      //   for (i = 0; i < a.length; i++) {
+      //     console.log(a[i]);
+      //   }
+
+      //--------------find even and odd using ternary operator-----------------------
+      //   for (i = 0; i <= 10; i++) {
+      //     i % 2 == 0 ? console.log("even") : console.log("odd");
+      //   }
+
+      //------------write a program to find the length of theb array without using length-----------------
+      // var a = "webdeveloper"
+      // var c=0;
+      // for(i=0;a[i]!=undefined;i++){
+      //     c=c+1;
+
+      // }
+      // console.log(c);
+      //---------------using length ----------------------------
+      // var a= "webdeveloper"
+      // var c=0;
+      // for(i=0;i<a.length;i++){
+      //     c=c+1
+      // }
+      // console.log(c);
+
+      //-----------------------write a print single quotes inside single quotes-----------------
+      // var str = "I am \"hyderbad\" telangana";
+      // console.log(str);
+
+      // var a= "I\'am from hyd";
+      // console.log(a);
+
+      // var b = "web developer\\frontend developer"
+      // console.log(b);
+
+      //-------------------find even strings in a given string------------
+
+      // var a= "hello"
+      // var temp="";
+      // for(i=0;i<a.length;i++){
+      //   if(i%2==0){
+      //     temp=temp+a[i];
+      //     console.log(a[i]);
+      //   }
+      // }
+      // console.log(temp);
+
+      //----------------------find odd indexes in the given string--------------------
+      // var str="Pravalika";
+      // for(i=1;i<str.length;i++){
+      //   if(i%2!==0){
+      //     console.log(str[i]);
+      //   }
+      // }
+
+      //--------------------output-rvlk-------------
+
+      // var a = "hello"
+
+      // for(i=0;a[i]!=undefined;i++){
+      //     var c=0;
+      //     c=c+1;
+      //     console.log(a[i]);
+      // }
+      // console.log(c);
+
+      //--------------output-hello1----------
+
+      // var a = "hello"
+
+      // for(i=0;a[i]!=undefined;i++){
+
+      //     c=c+1;
+      //     console.log(a[i]);
+      //     var c=0;
+      // }
+      // console.log(c);
+
+      // ---------output-hello0-------------
+
+      // -----------------------------------------------string methods-------------------------------------------------------------------------------
+      //     var str = "Hello world"
+      //     // console.log(str.replace(" ",""));
+      //     var temp=""
+      //     for(i=0;i<str.length;i++){
+      //       if(str[i]!==" "){
+      //         temp+=str[i]
+      //       }
+      //     }
+      //  console.log(temp);
+
+      // --------------------------------------print index values without using slice-------------------------------------------------------
+      //  var s="pravalika"
+      //  var temp=""
+      //  function func(a,b){
+      //   for(i=a;i<b;i++){
+      //     temp+=s[i]
+      //   }
+
+      //  console.log(temp);
+      //  }
+      //  func(1,6)
+
+      //---------------------------------------------------------understanding string questions-----------------------------------------------------
+
+      //1.----------**Reverse a String:**Write a function that takes a string as input and returns the string reversed.
+
+      var a="pravalika"
+      var temp=""
+      for(i=a.length-1;i>=0;i--){
+        temp=temp+a[i]
+
+      }
+      console.log(temp);
+
+      //2.--------**Palindrome Check:**Write a function that checks whether a given string is a palindrome (reads the same forwards and backward). Ignore spaces, punctuation, and capitalization.
+
+      // var str = "pop";
+      // var temp1 = "";
+      // var temp2 = "";
+      // for (i = 0; i < str.length; i++) {
+      //   temp1 = temp1 + str[i];
+      // }
+      // for (j = str.length - 1; j >=0; j--) {
+      //   temp2 += str[j];
+      // }
+      // if (temp1 == temp2) {
+      //   console.log("palindrome");
+      // } else {
+      //   console.log("not a palindrome");
+      // }
+
+      //3.-----Anagram Detection:**Write a function that checks if two words are anagrams of each other. Anagrams are words or phrases formed by rearranging the letters of another.-----
+
+      // var a = "the";
+      // var b = "ate";
+
+      // if(a[0]==b[0]||a[1]==b[1]||a[2]==b[2]||a[3]==b[3]||a[4]==b[4]||a[5]==b[6]){
+      //   console.log("anogram");
+      // }
+      // else{
+      //   console.log("not an anagram");
+      // }
+
+      //4.----**Count Vowels and Consonants:**Write a function that counts the number of vowels and consonants in a given string.----
+      // var str="pravalika"
+
+      // var c=0
+      // for(i=0;i<str.length;i++){
+      //   if(str[i]=="a"||str[i]=="e"||str[i]=="i"||str[i]=="o"||str[i]=="u"){
+      //     c=c+1;
+
+      //   }
+
+      // }
+      // console.log(c);
+      //---------------------------------------using while------------------------------------------------
+      // var str = "pravalika";
+      // var c = 0;
+      // var i = 0;
+
+      // while (i < 9) {
+      //   if(str[i]=="a"||str[i]=="e"||str[i]=="i"||str[i]=="o"||str[i]=="u")
+      //   {
+      //     c = c + 1;
+      //   }
+      //   i++;
+      // }
+
+      // console.log(c);
+
+      //5.----**Capitalize the First Letter of Each Word:**------------------------------------------------------
+      //----------Write a function that capitalizes the first letter of each word in a given sentence.------
+
+      // var str="chai_an_ak_mar"
+
+      // var b="";
+      // for(i=0;i<str.length;i++){
+      //   if(str[i]=="_"){
+      //      b+=str[i+1].toUpperCase();
+      //     //  console.log(str[i+1].toUpperCase);
+      //      i++;
+      //   }else{
+      //     b+=str[i];
+      //   }
+      // }
+      // console.log(b);
+
+      // var str = "h_ll_ku_ar";
+      // var b = "";
+      // for (i = 0; i < str.length; i++) {
+      //   if (str[i+1] == "_") {
+      //     b += str[i].toUpperCase();
+      //     //  console.log(str[i+1].toUpperCase);
+      //     i++;
+      //   } else {
+      //     b += str[i];
+      //   }
+      // }
+      // console.log(b);
+
+      // var str = " Write a function that capitalizes the first letter";
+      // var b="";
+      // for(i=0;i<str.length;i++){
+      //   if(str[i]==" "){
+      //      b+=" "+str[i+1].toUpperCase();
+      //     //  console.log(str[i+1].toUpperCase);
+      //      i++;
+      //   }else{
+      //     b+=str[i];
+      //   }
+      // }
+      // console.log(b);
+
+      //6.**String Compression:**
+      //Implement a function to perform basic string compression using the counts of repeated characters.
+      //For example, "aabcccccaaa" becomes "a2b1c5a3".
+      
+      //  var str="aabcccccaaa"
+      //  var c=1
+      //  var temp=""
+      //  for(i=0;i<str.length;i++){
+      //     if(str[i]==str[i+1]){
+      //       c++;
+      //     }else{
+      //      temp+=str[i]+c
+      //      c=1;
+
+      //  }
+      // }
+      //  console.log(temp)
+
+      //7.-------**Find the Longest Word:**
+      //Write a function that finds the longest word in a sentence. If two or more words have the same length, return the first one.
+
+      // var str = "frontend developer java, java script"
+      // var temp=""
+      // var a=str.split(" ");
+      // for(i=0;i<str.length;i++){
+      //   if()
+      // }
+
+
+      
+    </script>
+  </body>
+</html>
